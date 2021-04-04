@@ -24,13 +24,12 @@
 
   <include name="aosp.xml" />
   <include name="semc.xml" />
+  <project path="cm_android" name="CyanogenMod/android" />
+  <project path="aosp_android" name="platform/manifest" remote="aosp" />
 
   <project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-
-  <project path="android" name="CyanogenMod/android" />
-
   <project path="art" name="CyanogenMod/android_art" groups="pdk" />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" />
